@@ -21,7 +21,7 @@ var aut_fork = {
   type: 'ethan-survey-text-duration',
   preamble: '<img src="img/fork.jpeg" height = "300px"><br>Your responses:<br><br><div style="margin: 10px 10%; line-height: 40px;">',
   questions: [{prompt: 'Type your creative use here and hit enter to add it:', required: true}],
-  trial_duration: 30000,
+  trial_duration: 180000,
   button_label: null,
   data: {variable: "aut_fork_responses", aut: "fork", use: "", aut_stim: ""},
   on_start: function(trial){
