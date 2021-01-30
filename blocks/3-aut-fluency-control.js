@@ -34,7 +34,7 @@ timeline.push({
 // Create the fluency task and loop to record RTs for each response
 var aut_fluency = {
   type: 'ethan-survey-text-duration',
-  preamble: 'List any instances of the category you can think of. We are not looking for creative responses on this task.<br><br> Your responses:<br><br><div style="margin: 10px 10%; line-height: 40px;">',
+  preamble: 'List any instances of the category <b>animals</b> that you can think of. We are not looking for creative responses on this task.<br><br> Your responses:<br><br><div style="margin: 10px 10%; line-height: 40px;">',
   questions: [{prompt: 'Type each response here and hit enter to add it:', required: true}],
   trial_duration: 60000,
   button_label: null,
