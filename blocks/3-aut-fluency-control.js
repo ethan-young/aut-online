@@ -3,8 +3,8 @@ timeline.push({
   type: 'instructions',
   pages: [
     "<div style = 'text-align: left; margin: 20px 10%;'>"+
-    "Thanks!<br><br>For the next task, you will be given a category, like car brands. We'll ask you to list as many instances as you can think of that belong to that category.<br><br>" + 
-    "For example, for the category 'car brands', you would type in things such as: 'Ford, Toyota, etc.'.<br><br>"+
+    "Thanks!<br><br>For the next task, you will be given a category, like car brands. We'll ask you to list as many examples as you can think of that belong to that category.<br><br>" + 
+    "For instance, for the category 'car brands', you would type in things such as: 'Ford, Toyota, etc.'.<br><br>"+
     "You'll have one minute to complete the task.<br><br>" +
     "</div>"
   ],
@@ -20,7 +20,7 @@ timeline.push({
   type: 'instructions',
   pages: [
     "<div style = 'text-align: left; margin: 20px 10%;'>"+
-    "Please write down all of the instances for the category <b>animals</b> that you can think of.<br><br> Again, you'll have one minute.<br><br>" +
+    "Please write down all of the examples for the category <b>animals</b> that you can think of.<br><br> Again, you'll have one minute.<br><br>" +
     "</div>"
   ],
   show_clickable_nav: true,
@@ -34,7 +34,7 @@ timeline.push({
 // Create the fluency task and loop to record RTs for each response
 var aut_fluency = {
   type: 'ethan-survey-text-duration',
-  preamble: 'List any instances of the category <b>animals</b> that you can think of. We are not looking for creative responses on this task.<br><br> Your responses:<br><br><div style="margin: 10px 10%; line-height: 40px;">',
+  preamble: 'List any examples of the category <b>animals</b> that you can think of. We are not looking for creative responses on this task.<br><br> Your responses:<br><br><div style="margin: 10px 10%; line-height: 40px;">',
   questions: [{prompt: 'Type each response here and hit enter to add it:', required: true}],
   trial_duration: 60000,
   button_label: null,
