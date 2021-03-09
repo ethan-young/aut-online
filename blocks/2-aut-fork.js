@@ -5,7 +5,7 @@ timeline.push({
     "<div style = 'text-align: left; margin: 20px 10%;'>"+
     "Please write down all of the original and creative uses for a <b style = 'color: blue;'>fork</b> that you can think of.<br><br>"+
     "Certainly, there are common, unoriginal ways to use a fork. However, for this task, list all of the unusual, creative, and uncommon uses you can think of.<br><br>" +
-    "You’ll have three minutes." +
+    "You’ll have two minutes." +
     "</div>"
   ],
   show_clickable_nav: true,
