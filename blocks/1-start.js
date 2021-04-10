@@ -1,14 +1,3 @@
-function receiveMessage(event) {
-  if (event.origin !== window.parent.location)
-  return;
-  console.log("Message Recieved from: " + event.origin);
-  var qualtrics_url = event.data;
-  }
-  
-window.addEventListener("message", receiveMessage, false);
-
-var start_time = jsPsych.startTime();
-
 // Create timeline object
 var timeline = [];
         

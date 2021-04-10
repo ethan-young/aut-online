@@ -16,6 +16,10 @@ jsPsych.init({
     console.log(aut_start);
     aut_data = jsPsych.data.get().json();
     aut_browser = jsPsych.data.getInteractionData().json();
+    
+    var qualtrics_url = window.parent.location.href;
+    console.log(qualtrics_url);
+    
     window.parent.postMessage([aut_start, aut_data, aut_browser], qualtrics_url);
 
   }
