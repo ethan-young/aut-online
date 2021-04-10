@@ -12,9 +12,11 @@ timeline.push({
 jsPsych.init({
   timeline: timeline,
   on_finish: function() {
-    jsPsych.data.addProperties({start_datetime: start_time});
-    jsPsych.data.get().addToLast({browser: jsPsych.data.getInteractionData().json()});
+    aut_start = jsPsych.startTime();
+    console.log(aut_start);
     aut_data = jsPsych.data.get().json();
-    window.parent.postMessage(aut_data, 'https://survey.uu.nl/jfe/form/SV_emteS89lifM5U0t');
+    aut_browser = jsPsych.data.getInteractionData().json();
+    window.parent.postMessage([aut_start, aut_data, aut_browser], qualtrics_url);
+
   }
 });
