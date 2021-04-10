@@ -13,9 +13,11 @@ jsPsych.init({
   timeline: timeline,
   on_finish: function() {
     aut_start = jsPsych.startTime();
-    console.log(aut_start);
-    aut_data = jsPsych.data.get().json();
+    aut_data = jsPsych.data.get().ignore('aut_stim','preamble','stimulus').json();
     aut_browser = jsPsych.data.getInteractionData().json();
+    
+    console.log(aut_data.uniqueNames());
+    
     window.parent.postMessage([aut_start, aut_data, aut_browser], "https://survey.uu.nl/jfe/form/SV_bPHLspmdPfCY9ZY");
 
   }
