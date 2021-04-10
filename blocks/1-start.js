@@ -1,7 +1,7 @@
 function receiveMessage(event) {
   if (event.origin !== window.parent.location)
   return;
-  console.log(event.origin);
+  console.log("Message Recieved from: " + event.origin);
   var qualtrics_url = event.data;
   }
   
